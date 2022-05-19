@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SQ01 Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+
+    <div class="model">
+
+      <img class="template" src="view.png" draggable = "false">
+
+      <div class="pot_knob" id="B" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div class="pot_knob" id="C" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div class="pot_knob" id="D" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div class="pot_knob" id="E" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div class="pot_knob" id="F" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div class="pot_knob" id="H" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div class="pot_knob" id="J" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div class="pot_knob" id="L" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div class="pot_knob" id="N" onclick="knob_onclick(this)">
+        <img class="img_knob" src="knob.png" draggable="false">
+      </div>
+
+      <div id="A1">
+        <div class="label" id="A11" onclick="label_onclick(this)"><span>Input 1</span></div>
+        <div class="label" id="A12" onclick="label_onclick(this)"><span>Input 2</span></div>
+        <div class="label" id="A15" onclick="label_onclick(this)"><span>Mute   </span></div>
+      </div>
+
+      <div id="G1">
+        <div class="label" id="G10" onclick="label_onclick(this)"><span>Flat   </span></div>
+        <div class="label" id="G11" onclick="label_onclick(this)"><span>400 Hz </span></div>
+        <div class="label" id="G12" onclick="label_onclick(this)"><span>800 Hz </span></div>
+        <div class="label" id="G13" onclick="label_onclick(this)"><span>2.4 kHz</span></div>
+      </div>
+
+      <div id="I1">
+        <div class="label" id="I10" onclick="label_onclick(this)"><span>60 Hz </span></div>
+        <div class="label" id="I11" onclick="label_onclick(this)"><span>80 Hz </span></div>
+        <div class="label" id="I12" onclick="label_onclick(this)"><span>100 Hz</span></div>
+        <div class="label" id="I13" onclick="label_onclick(this)"><span>200 Hz</span></div>
+      </div>
+
+      <div id="K1">
+        <div class="label" id="K10" onclick="label_onclick(this)"><span>500 Hz </span></div>
+        <div class="label" id="K11" onclick="label_onclick(this)"><span>1.0 kHz</span></div>
+        <div class="label" id="K12" onclick="label_onclick(this)"><span>1.5 kHz</span></div>
+        <div class="label" id="K13" onclick="label_onclick(this)"><span>2.5 kHz</span></div>
+      </div>
+
+      <div id="M1">
+        <div class="label" id="M10" onclick="label_onclick(this)"><span>10.0 kHz</span></div>
+        <div class="label" id="M11" onclick="label_onclick(this)"><span>12.5 kHz</span></div>
+        <div class="label" id="M12" onclick="label_onclick(this)"><span>15.0 kHz</span></div>
+        <div class="label" id="M13" onclick="label_onclick(this)"><span>17.5 kHz</span></div>
+      </div>
+
+      <div id="O1">
+        <div class="label" id="O10" onclick="label_onclick(this)"><span>Flat  </span></div>
+        <div class="label" id="O11" onclick="label_onclick(this)"><span>80 Hz </span></div>
+        <div class="label" id="O12" onclick="label_onclick(this)"><span>120 Hz</span></div>
+        <div class="label" id="O13" onclick="label_onclick(this)"><span>160 Hz</span></div>
+      </div>
+
+      <div class="fader">
+        <img class="fader_knob" id="fader_knob" src="fader.png" draggable="false">
+        <input class="slider" id="slider" type="range" oninput="slider_handler()" min="0" max="100" value="0" step="1">
+      </div>
+
+      <div class="db_value" id="db_value">
+        <span id="db_span"></span>
+      </div>
+ 
+    </div>
+  </body>
+</html>
